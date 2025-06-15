@@ -39,40 +39,47 @@ Kötü niyetli kullanımlardan uzak durun, etik kalın!
 Her türlü soru ve öneri için GitHub Issues bölümünü kullanabilirsiniz.
 İyi çalışmalar!
 
-
 """
-============================================
-    Specter Toolkit - Kurulum ve Kullanım
-============================================
+==============================================
+      Specter Toolkit - Hızlı Kurulum Rehberi
+==============================================
 
-1. Gereksinimler:
-   - Python 3.6 veya üzeri
-   - pip (Python paket yöneticisi)
-   - Termux (Android) veya Linux ortamı
-   - Hydra (brute-force için, opsiyonel)
-   - Crunch (wordlist oluşturmak için, opsiyonel)
+1) GitHub reposunu klonlayın veya dosyayı indirin:
 
-2. Gerekli Python modüllerini yükleyin:
-   pip install rich colorama requests shodan
+   git clone https://github.com/Mustafa550/specter.git
+   cd specter
 
-3. Hydra ve Crunch yüklemek için:
+2) Gerekli Python modüllerini yükleyin:
 
-   Termux:
+   pip install -r requirements.txt
+
+   *requirements.txt içeriği:*
+   rich
+   colorama
+   requests
+   shodan
+
+3) (Opsiyonel) Ek araçları yükleyin:
+
+   Termux için:
       pkg install hydra crunch
 
-   Ubuntu/Debian:
+   Ubuntu/Debian için:
       sudo apt update
       sudo apt install hydra crunch
 
-4. Scripti çalıştırmak için terminalden:
+4) Scripti çalıştırın:
+
    python3 specter_alliance.py
 
-5. Program açıldıktan sonra menüden seçim yaparak araçları kullanabilirsiniz.
+5) Program açıldığında menüden istediğiniz aracı seçerek kullanabilirsiniz.
 
-6. Shodan API kullanmak için:
-   https://account.shodan.io/ adresinden ücretsiz API anahtarınızı alın.
+==============================================
 
-7. Phishing modülünde oluşturduğunuz sayfayı dışarıdan erişilebilir yapmak için
-   ngrok gibi bir tünel aracı kullanmanızı öneririz.
+Not:  
+- Shodan API kullanımı için https://account.shodan.io/ üzerinden ücretsiz API anahtarı alın.  
+- Phishing sayfalarını dış dünyaya açmak için ngrok veya benzeri tünel araçlarını kullanabilirsiniz.  
+- Araç yalnızca etik amaçlı kullanım içindir, izinsiz kullanımı yasaktır.
 
-=======================================
+==============================================
+"""
