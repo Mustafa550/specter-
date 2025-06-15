@@ -70,7 +70,7 @@ Her türlü soru ve öneri için GitHub Issues bölümünü kullanabilirsiniz.
 
 4) Scripti çalıştırın:
 
-   python3 specter_alliance.py
+   python3 specter.py
 
 5) Program açıldığında menüden istediğiniz aracı seçerek kullanabilirsiniz.
 
